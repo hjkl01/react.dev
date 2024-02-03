@@ -35,10 +35,6 @@
                     "path": "/notes/docker/hoppscotch"
                 },
                 {
-                    "title": "index",
-                    "path": "/notes/docker/index"
-                },
-                {
                     "title": "meetings",
                     "path": "/notes/docker/meetings"
                 },
@@ -113,10 +109,6 @@
                     "path": "/notes/github/awesome"
                 },
                 {
-                    "title": "index",
-                    "path": "/notes/github/index"
-                },
-                {
                     "title": "neovimx",
                     "path": "/notes/github/neovimx"
                 }
@@ -157,10 +149,6 @@
                 {
                     "title": "frp",
                     "path": "/notes/linux/frp"
-                },
-                {
-                    "title": "index",
-                    "path": "/notes/linux/index"
                 },
                 {
                     "title": "iptables",
@@ -215,12 +203,7 @@
         {
             "title": "mac",
             "path": "/notes/mac",
-            "routes": [
-                {
-                    "title": "index",
-                    "path": "/notes/mac/index"
-                }
-            ]
+            "routes": []
         },
         {
             "hasSectionHeader": true,
@@ -230,10 +213,6 @@
             "title": "others",
             "path": "/notes/others",
             "routes": [
-                {
-                    "title": "index",
-                    "path": "/notes/others/index"
-                },
                 {
                     "title": "netcable",
                     "path": "/notes/others/netcable"
@@ -271,10 +250,6 @@
                 {
                     "title": "fastapi_mail",
                     "path": "/notes/python/fastapi_mail"
-                },
-                {
-                    "title": "index",
-                    "path": "/notes/python/index"
                 },
                 {
                     "title": "jupyter",
@@ -317,12 +292,7 @@
         {
             "title": "windows",
             "path": "/notes/windows",
-            "routes": [
-                {
-                    "title": "index",
-                    "path": "/notes/windows/index"
-                }
-            ]
+            "routes": []
         }
     ]
 }

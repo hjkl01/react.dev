@@ -28,6 +28,8 @@ def main():
         markdown_files = sorted(os.listdir(f"{root_path}/{d}"))
 
         dirname = d.replace(".md", "")
+        if dirname == "index":
+            continue
         hasheader = {"hasSectionHeader": True, "sectionHeader": dirname}
         result["routes"].append(hasheader)
 
@@ -38,6 +40,8 @@ def main():
         }
         for mf in markdown_files:
             mfname = mf.replace(".md", "")
+            if mfname == "index":
+                continue
             temp["routes"].append({"title": mfname, "path": f"/notes/{dirname}/{mfname}"})
 
         result["routes"].append(temp)
