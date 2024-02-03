@@ -4,110 +4,6 @@
     "routes": [
         {
             "hasSectionHeader": true,
-            "sectionHeader": "windows"
-        },
-        {
-            "title": "windows",
-            "path": "/notes/windows",
-            "routes": [
-                {
-                    "title": "index",
-                    "path": "/notes/windows/index"
-                }
-            ]
-        },
-        {
-            "hasSectionHeader": true,
-            "sectionHeader": "linux"
-        },
-        {
-            "title": "linux",
-            "path": "/notes/linux",
-            "routes": [
-                {
-                    "title": "nginx",
-                    "path": "/notes/linux/nginx"
-                },
-                {
-                    "title": "neovim_lua",
-                    "path": "/notes/linux/neovim_lua"
-                },
-                {
-                    "title": "adb",
-                    "path": "/notes/linux/adb"
-                },
-                {
-                    "title": "flash",
-                    "path": "/notes/linux/flash"
-                },
-                {
-                    "title": "ssh_git",
-                    "path": "/notes/linux/ssh_git"
-                },
-                {
-                    "title": "frp",
-                    "path": "/notes/linux/frp"
-                },
-                {
-                    "title": "nodejs",
-                    "path": "/notes/linux/nodejs"
-                },
-                {
-                    "title": "arch",
-                    "path": "/notes/linux/arch"
-                },
-                {
-                    "title": "_category_.json",
-                    "path": "/notes/linux/_category_.json"
-                },
-                {
-                    "title": "index",
-                    "path": "/notes/linux/index"
-                },
-                {
-                    "title": "iptables",
-                    "path": "/notes/linux/iptables"
-                },
-                {
-                    "title": "proxy",
-                    "path": "/notes/linux/proxy"
-                },
-                {
-                    "title": "ubuntu",
-                    "path": "/notes/linux/ubuntu"
-                },
-                {
-                    "title": "samba",
-                    "path": "/notes/linux/samba"
-                },
-                {
-                    "title": "remote_desktop",
-                    "path": "/notes/linux/remote_desktop"
-                },
-                {
-                    "title": "neovim",
-                    "path": "/notes/linux/neovim"
-                },
-                {
-                    "title": "caddy",
-                    "path": "/notes/linux/caddy"
-                },
-                {
-                    "title": "ascii",
-                    "path": "/notes/linux/ascii"
-                },
-                {
-                    "title": "asdf",
-                    "path": "/notes/linux/asdf"
-                },
-                {
-                    "title": "supervisor",
-                    "path": "/notes/linux/supervisor"
-                }
-            ]
-        },
-        {
-            "hasSectionHeader": true,
             "sectionHeader": "docker"
         },
         {
@@ -115,32 +11,24 @@
             "path": "/notes/docker",
             "routes": [
                 {
-                    "title": "nginx",
-                    "path": "/notes/docker/nginx"
+                    "title": "cloudreve",
+                    "path": "/notes/docker/cloudreve"
                 },
                 {
-                    "title": "meetings",
-                    "path": "/notes/docker/meetings"
+                    "title": "code_server",
+                    "path": "/notes/docker/code_server"
                 },
                 {
-                    "title": "mysql",
-                    "path": "/notes/docker/mysql"
+                    "title": "cowrie",
+                    "path": "/notes/docker/cowrie"
                 },
                 {
-                    "title": "redis",
-                    "path": "/notes/docker/redis"
+                    "title": "ddns",
+                    "path": "/notes/docker/ddns"
                 },
                 {
-                    "title": "_category_.json",
-                    "path": "/notes/docker/_category_.json"
-                },
-                {
-                    "title": "shiori",
-                    "path": "/notes/docker/shiori"
-                },
-                {
-                    "title": "netdata",
-                    "path": "/notes/docker/netdata"
+                    "title": "gitea",
+                    "path": "/notes/docker/gitea"
                 },
                 {
                     "title": "hoppscotch",
@@ -151,78 +39,64 @@
                     "path": "/notes/docker/index"
                 },
                 {
-                    "title": "postgresql",
-                    "path": "/notes/docker/postgresql"
-                },
-                {
-                    "title": "cowrie",
-                    "path": "/notes/docker/cowrie"
-                },
-                {
-                    "title": "music",
-                    "path": "/notes/docker/music"
-                },
-                {
-                    "title": "samba",
-                    "path": "/notes/docker/samba"
-                },
-                {
-                    "title": "openwrt",
-                    "path": "/notes/docker/openwrt"
-                },
-                {
-                    "title": "prest",
-                    "path": "/notes/docker/prest"
-                },
-                {
-                    "title": "code_server",
-                    "path": "/notes/docker/code_server"
-                },
-                {
-                    "title": "cloudreve",
-                    "path": "/notes/docker/cloudreve"
-                },
-                {
-                    "title": "movies",
-                    "path": "/notes/docker/movies"
-                },
-                {
-                    "title": "nocodb",
-                    "path": "/notes/docker/nocodb"
-                },
-                {
-                    "title": "ddns",
-                    "path": "/notes/docker/ddns"
+                    "title": "meetings",
+                    "path": "/notes/docker/meetings"
                 },
                 {
                     "title": "mongo",
                     "path": "/notes/docker/mongo"
                 },
                 {
-                    "title": "gitea",
-                    "path": "/notes/docker/gitea"
+                    "title": "movies",
+                    "path": "/notes/docker/movies"
+                },
+                {
+                    "title": "music",
+                    "path": "/notes/docker/music"
+                },
+                {
+                    "title": "mysql",
+                    "path": "/notes/docker/mysql"
+                },
+                {
+                    "title": "netdata",
+                    "path": "/notes/docker/netdata"
+                },
+                {
+                    "title": "nginx",
+                    "path": "/notes/docker/nginx"
+                },
+                {
+                    "title": "nocodb",
+                    "path": "/notes/docker/nocodb"
+                },
+                {
+                    "title": "openwrt",
+                    "path": "/notes/docker/openwrt"
+                },
+                {
+                    "title": "postgresql",
+                    "path": "/notes/docker/postgresql"
+                },
+                {
+                    "title": "prest",
+                    "path": "/notes/docker/prest"
+                },
+                {
+                    "title": "redis",
+                    "path": "/notes/docker/redis"
+                },
+                {
+                    "title": "samba",
+                    "path": "/notes/docker/samba"
+                },
+                {
+                    "title": "shiori",
+                    "path": "/notes/docker/shiori"
                 },
                 {
                     "title": "wxedge",
                     "path": "/notes/docker/wxedge"
-                }
-            ]
-        },
-        {
-            "hasSectionHeader": true,
-            "sectionHeader": "mac"
-        },
-        {
-            "title": "mac",
-            "path": "/notes/mac",
-            "routes": [
-                {
-                    "title": "_category_.json",
-                    "path": "/notes/mac/_category_.json"
-                },
-                {
-                    "title": "index",
-                    "path": "/notes/mac/index"
                 }
             ]
         },
@@ -235,16 +109,116 @@
             "path": "/notes/github",
             "routes": [
                 {
-                    "title": "neovimx",
-                    "path": "/notes/github/neovimx"
+                    "title": "awesome",
+                    "path": "/notes/github/awesome"
                 },
                 {
                     "title": "index",
                     "path": "/notes/github/index"
                 },
                 {
-                    "title": "awesome",
-                    "path": "/notes/github/awesome"
+                    "title": "neovimx",
+                    "path": "/notes/github/neovimx"
+                }
+            ]
+        },
+        {
+            "hasSectionHeader": true,
+            "sectionHeader": "linux"
+        },
+        {
+            "title": "linux",
+            "path": "/notes/linux",
+            "routes": [
+                {
+                    "title": "adb",
+                    "path": "/notes/linux/adb"
+                },
+                {
+                    "title": "arch",
+                    "path": "/notes/linux/arch"
+                },
+                {
+                    "title": "ascii",
+                    "path": "/notes/linux/ascii"
+                },
+                {
+                    "title": "asdf",
+                    "path": "/notes/linux/asdf"
+                },
+                {
+                    "title": "caddy",
+                    "path": "/notes/linux/caddy"
+                },
+                {
+                    "title": "flash",
+                    "path": "/notes/linux/flash"
+                },
+                {
+                    "title": "frp",
+                    "path": "/notes/linux/frp"
+                },
+                {
+                    "title": "index",
+                    "path": "/notes/linux/index"
+                },
+                {
+                    "title": "iptables",
+                    "path": "/notes/linux/iptables"
+                },
+                {
+                    "title": "neovim",
+                    "path": "/notes/linux/neovim"
+                },
+                {
+                    "title": "neovim_lua",
+                    "path": "/notes/linux/neovim_lua"
+                },
+                {
+                    "title": "nginx",
+                    "path": "/notes/linux/nginx"
+                },
+                {
+                    "title": "nodejs",
+                    "path": "/notes/linux/nodejs"
+                },
+                {
+                    "title": "proxy",
+                    "path": "/notes/linux/proxy"
+                },
+                {
+                    "title": "remote_desktop",
+                    "path": "/notes/linux/remote_desktop"
+                },
+                {
+                    "title": "samba",
+                    "path": "/notes/linux/samba"
+                },
+                {
+                    "title": "ssh_git",
+                    "path": "/notes/linux/ssh_git"
+                },
+                {
+                    "title": "supervisor",
+                    "path": "/notes/linux/supervisor"
+                },
+                {
+                    "title": "ubuntu",
+                    "path": "/notes/linux/ubuntu"
+                }
+            ]
+        },
+        {
+            "hasSectionHeader": true,
+            "sectionHeader": "mac"
+        },
+        {
+            "title": "mac",
+            "path": "/notes/mac",
+            "routes": [
+                {
+                    "title": "index",
+                    "path": "/notes/mac/index"
                 }
             ]
         },
@@ -257,12 +231,12 @@
             "path": "/notes/others",
             "routes": [
                 {
-                    "title": "netcable",
-                    "path": "/notes/others/netcable"
-                },
-                {
                     "title": "index",
                     "path": "/notes/others/index"
+                },
+                {
+                    "title": "netcable",
+                    "path": "/notes/others/netcable"
                 }
             ]
         },
@@ -275,6 +249,34 @@
             "path": "/notes/python",
             "routes": [
                 {
+                    "title": "celery",
+                    "path": "/notes/python/celery"
+                },
+                {
+                    "title": "chrome",
+                    "path": "/notes/python/chrome"
+                },
+                {
+                    "title": "databases",
+                    "path": "/notes/python/databases"
+                },
+                {
+                    "title": "django",
+                    "path": "/notes/python/django"
+                },
+                {
+                    "title": "fastapi",
+                    "path": "/notes/python/fastapi"
+                },
+                {
+                    "title": "fastapi_mail",
+                    "path": "/notes/python/fastapi_mail"
+                },
+                {
+                    "title": "index",
+                    "path": "/notes/python/index"
+                },
+                {
                     "title": "jupyter",
                     "path": "/notes/python/jupyter"
                 },
@@ -283,60 +285,42 @@
                     "path": "/notes/python/mitmproxy"
                 },
                 {
-                    "title": "settings",
-                    "path": "/notes/python/settings"
-                },
-                {
-                    "title": "fastapi_mail",
-                    "path": "/notes/python/fastapi_mail"
-                },
-                {
-                    "title": "django",
-                    "path": "/notes/python/django"
-                },
-                {
-                    "title": "ocr",
-                    "path": "/notes/python/ocr"
-                },
-                {
-                    "title": "_category_.json",
-                    "path": "/notes/python/_category_.json"
-                },
-                {
-                    "title": "selenium",
-                    "path": "/notes/python/selenium"
+                    "title": "mongo",
+                    "path": "/notes/python/mongo"
                 },
                 {
                     "title": "multiprocessing",
                     "path": "/notes/python/multiprocessing"
                 },
                 {
-                    "title": "fastapi",
-                    "path": "/notes/python/fastapi"
-                },
-                {
-                    "title": "databases",
-                    "path": "/notes/python/databases"
+                    "title": "ocr",
+                    "path": "/notes/python/ocr"
                 },
                 {
                     "title": "pip",
                     "path": "/notes/python/pip"
                 },
                 {
+                    "title": "selenium",
+                    "path": "/notes/python/selenium"
+                },
+                {
+                    "title": "settings",
+                    "path": "/notes/python/settings"
+                }
+            ]
+        },
+        {
+            "hasSectionHeader": true,
+            "sectionHeader": "windows"
+        },
+        {
+            "title": "windows",
+            "path": "/notes/windows",
+            "routes": [
+                {
                     "title": "index",
-                    "path": "/notes/python/index"
-                },
-                {
-                    "title": "celery",
-                    "path": "/notes/python/celery"
-                },
-                {
-                    "title": "mongo",
-                    "path": "/notes/python/mongo"
-                },
-                {
-                    "title": "chrome",
-                    "path": "/notes/python/chrome"
+                    "path": "/notes/windows/index"
                 }
             ]
         }

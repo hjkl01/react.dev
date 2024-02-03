@@ -4,7 +4,7 @@ import json
 
 def main():
     root_path = "src/content/notes"
-    dirs = os.listdir(root_path)
+    dirs = sorted(os.listdir(root_path))
 
     result = {
         "title": "My Notes",
@@ -25,7 +25,7 @@ def main():
     for d in dirs:
         if os.path.isfile(f"{root_path}/{d}"):
             continue
-        markdown_files = os.listdir(f"{root_path}/{d}")
+        markdown_files = sorted(os.listdir(f"{root_path}/{d}"))
 
         dirname = d.replace(".md", "")
         hasheader = {"hasSectionHeader": True, "sectionHeader": dirname}
