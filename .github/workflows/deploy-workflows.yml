@@ -1,0 +1,56 @@
+name: Deploy to GitHub Pages
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - master
+  watch:
+    types: [started]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v4.1.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.5.0
+        with:
+          folder: build # The folder the action should deploy.
+          token: ${{ secrets.GH_TOKEN }}
+          branch: gh-pages
+          force: true
+
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: 16
+      #
+      # - name: Install Dependencies
+      #   run: npm install
+      #
+      # - name: Build React App
+      #   run: npm run build
+      #
+      # - name: Deploy to GitHub Pages 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4.5.0
+      #   with:
+      #     branch: gh-pages
+      #     folder: build
+      #     clean: true
+      #     access_token: ${{ secrets.GH_TOKEN }}
+      #     ssh-key: ${{ secrets.DEPLOY_KEY }}
