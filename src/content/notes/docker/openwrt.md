@@ -1,0 +1,85 @@
+# openwrt
+
+## [command](https://mlapp.cn/376.html)
+
+```yaml
+# command
+sudo ip link set enp3s0 promisc on
+docker network create -d macvlan --subnet=192.168.50.0/24 --gateway=192.168.50.1 -o parent=enp3s0 macnet
+docker run --restart always --name openwrt -d --network macnet --privileged registry.cn-shanghai.aliyuncs.com/suling/openwrt:x86_64 /sbin/init
+docker exec -it openwrt zsh
+
+vim /etc/config/network
+
+config interface 'lan'
+    option type 'bridge'
+    option ifname 'eth0'
+    option proto 'static'
+    option ipaddr '192.168.50.18'
+    option netmask '255.255.255.0'
+    option ip6assign '60'
+    option gateway '192.168.50.1'
+    option broadcast '192.168.50.255'
+    option dns '192.168.50.1'
+
+/etc/init.d/network restart
+```
+
+## [docker-compose](https://github.com/crazygit/family-media-center/blob/master/docker-compose.openwrt.yml)
+
+```yaml
+# 参考: https://docs.docker.com/network/macvlan/
+
+# 虚拟网卡技术: 可以选择macvlan模式，也可以ipvlan模式
+
+# 注意: 如果宿主机采用的是WIFI连接网络，则使用ipvlan模式，macvlan模式适合宿主机为有线连接网络的情况
+
+# 手动创建网络命令
+
+# ipvlan, parent为宿主机网卡
+# docker network create -d ipvlan --subnet=192.168.2.1/24 --gateway=192.168.2.1 -o parent=enp3s0 -o ipvlan_mode=l2 ipvlan
+
+# macvlan, parent为宿主机网卡
+# docker network create -d macvlan --subnet=192.168.2.1/24 --gateway=192.168.2.1 -o parent=enp3s0 macvlan
+
+# 使用docker-compose创建网络时，docker-compose V3版本配置时不支持设置网关,如有需要，可以使用version2.4的版本
+# https://docs.docker.com/compose/compose-file/
+
+# Additional IPAM configurations, such as gateway, are only honored for version 2 at the moment.
+
+version: "3.7"
+
+services:
+  openwrt:
+    image: crazygit/lean-openwrt-x86-64
+    restart: always
+    privileged: true
+    volumes:
+      - ./openwrt/etc/config/network:/etc/config/network
+      - ./openwrt/etc/config/dhcp:/etc/config/dhcp
+      - ./openwrt/etc/rc.local:/etc/rc.local
+    networks:
+      - macvlan
+      #- ipvlan
+
+networks:
+  macvlan:
+    driver: macvlan
+    driver_opts:
+      # 宿主机网卡
+      parent: enp3s0
+    ipam:
+      config:
+        - subnet: 192.168.2.0/24
+          #gateway: 192.168.2.1
+  #ipvlan:
+  #  driver: ipvlan
+  #  driver_opts:
+  #    ipvlan_mode: l2
+  #    # 宿主机网卡
+  #    parent: enp3s0
+  #  ipam:
+  #    config:
+  #      - subnet: 192.168.2.0/24
+  #        #gateway: 192.168.2.1
+```
