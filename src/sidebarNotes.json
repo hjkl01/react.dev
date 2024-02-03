@@ -37,6 +37,10 @@
                     "path": "/notes/linux/adb"
                 },
                 {
+                    "title": "flash",
+                    "path": "/notes/linux/flash"
+                },
+                {
                     "title": "ssh_git",
                     "path": "/notes/linux/ssh_git"
                 },
@@ -63,10 +67,6 @@
                 {
                     "title": "iptables",
                     "path": "/notes/linux/iptables"
-                },
-                {
-                    "title": "刷机",
-                    "path": "/notes/linux/刷机"
                 },
                 {
                     "title": "proxy",
